@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/myblogdemo/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets'
   }
 })
