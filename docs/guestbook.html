@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBlog Demo · 留言板</title>
+    <link rel="icon" href="/myblogdemo/vite.svg" />
+    <link rel="stylesheet" href="/myblogdemo/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
+        <nav class="nav">
+          <a href="/myblogdemo/index.html">首页</a>
+          <a href="/myblogdemo/archive.html">归档</a>
+          <a href="/myblogdemo/about.html">关于</a>
+          <a href="/myblogdemo/guestbook.html">留言板</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>留言板</h1>
+        <p class="muted">纯静态演示 · 表单不提交</p>
+      </section>
+
+      <form class="guestbook-form" onsubmit="return false;">
+        <div class="form">
+          <div class="field">
+            <label>昵称</label>
+            <input class="input" placeholder="你的名字" />
+          </div>
+          <div class="field">
+            <label>留言内容</label>
+            <textarea class="textarea" rows="4" placeholder="想说点什么…"></textarea>
+          </div>
+          <div class="actions">
+            <button class="btn" type="submit">发表（演示）</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="guestbook-list">
+        <div class="guestbook-entry">
+          <div class="entry-header">
+            <div class="user-info">
+              <div class="user-name">Alice</div>
+              <div class="timestamp">2025/08/02 12:00</div>
+            </div>
+          </div>
+          <div class="entry-content">博客风格很喜欢，期待上线真实版本～</div>
+        </div>
+      </div>
+
+      <footer class="footer">© 2025 MyBlog Demo</footer>
+    </main>
+  </body>
+</html>

@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/myblogdemo/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog Demo</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-    <script type="module" crossorigin src="/myblogdemo/assets/index-3cfb730f.js"></script>
+    <title>MyBlog Demo · 首页</title>
+    <link rel="icon" href="/myblogdemo/vite.svg" />
+    <link rel="stylesheet" href="/myblogdemo/styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
+        <nav class="nav">
+          <a href="/myblogdemo/index.html">首页</a>
+          <a href="/myblogdemo/archive.html">归档</a>
+          <a href="/myblogdemo/about.html">关于</a>
+          <a href="/myblogdemo/guestbook.html">留言板</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>最新文章</h1>
+        <p class="muted">这是一个纯静态演示页面，展示博客外观与结构</p>
+      </section>
+
+      <div class="list">
+        <article class="post">
+          <h2 class="post-title"><a href="/myblogdemo/post-1.html">用假数据搭建一个博客 Demo</a></h2>
+          <div class="post-meta">2025/08/01 · 作者 admin</div>
+          <p class="post-excerpt">使用静态页面快速展示博客的布局、导航、文章列表与详情样式。</p>
+        </article>
+
+        <article class="post">
+          <h2 class="post-title"><a href="/myblogdemo/post-2.html">归档与留言功能示意</a></h2>
+          <div class="post-meta">2025/07/25 · 作者 admin</div>
+          <p class="post-excerpt">本演示同时提供归档与留言的静态页面，方便预览整体风格。</p>
+        </article>
+      </div>
+
+      <footer class="footer">© 2025 MyBlog Demo</footer>
+    </main>
   </body>
-</html>
+  </html>

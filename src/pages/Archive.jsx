@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SiteHeader from "../components/SiteHeader";
 import { Link } from "react-router-dom";
-import { api } from "../api/api";
+import api from "../api/api";
 
 function groupByYear(list) {
   const map = {};
@@ -31,21 +31,10 @@ export default function Archive() {
     const fetchAllPosts = async () => {
       setLoading(true);
       setError("");
-      
       try {
-        // 获取所有已发布文章（不分页）
-        const response = await api.get('/api/articles', {
-          params: {
-            status: 'PUBLISHED',
-            size: 1000, // 获取足够多的文章用于归档
-            sort: 'createdAt,desc'
-          }
-        });
-        
-        console.log('归档页面文章响应:', response.data);
-        
-        // 处理分页响应格式
-        const articles = response.data.content || response.data || [];
+        // 从 mock API 获取所有文章（用较大的 size 模拟不分页）
+        const res = await api.getPosts(0, 1000);
+        const articles = res.success ? (res.data.content || []) : [];
         setPosts(articles);
       } catch (err) {
         console.error('获取归档文章失败:', err);
@@ -54,7 +43,6 @@ export default function Archive() {
         setLoading(false);
       }
     };
-
     fetchAllPosts();
   }, []);
 
