@@ -16,6 +16,8 @@
           <a href="/myblogdemo/archive.html">归档</a>
           <a href="/myblogdemo/about.html">关于</a>
           <a href="/myblogdemo/guestbook.html">留言板</a>
+          <a href="/myblogdemo/my-articles.html">我的文章</a>
+          <a href="/myblogdemo/article-create.html">写文章</a>
           <a href="/myblogdemo/login.html">登录</a>
         </nav>
       </div>
@@ -23,11 +25,10 @@
 
     <main class="container">
       <section class="hero">
-        <h1>留言板</h1>
-        <p class="muted">纯静态演示 · 使用现有模版样式</p>
+  <h1>留言板</h1>
       </section>
 
-      <form class="guestbook-form" onsubmit="return false;">
+  <form class="guestbook-form" onsubmit="location.href='/myblogdemo/guestbook.html#submitted';return false;">
         <div class="form">
           <div class="field">
             <label>昵称</label>
@@ -38,7 +39,7 @@
             <textarea class="textarea" rows="4" placeholder="想说点什么…"></textarea>
           </div>
           <div class="actions">
-            <button class="btn" type="submit" disabled>发表（演示）</button>
+            <button class="btn" type="submit">发表</button>
           </div>
         </div>
       </form>

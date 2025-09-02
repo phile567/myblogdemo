@@ -16,17 +16,18 @@
           <a href="/myblogdemo/archive.html">归档</a>
           <a href="/myblogdemo/about.html">关于</a>
           <a href="/myblogdemo/guestbook.html">留言板</a>
+          <a href="/myblogdemo/my-articles.html">我的文章</a>
+          <a href="/myblogdemo/article-create.html">写文章</a>
         </nav>
       </div>
     </header>
 
     <main class="container">
       <section class="hero">
-        <h1>登录</h1>
-        <p class="muted">Demo 账号：用户名 admin，密码 admin（演示用，不提交）</p>
+  <h1>登录</h1>
       </section>
 
-      <form class="form" style="max-width:420px;margin:24px auto" onsubmit="return false;">
+  <form class="form" style="max-width:420px;margin:24px auto" onsubmit="location.href='/myblogdemo/index.html';return false;">
         <div class="field">
           <label>用户名</label>
           <input class="input" placeholder="请输入用户名" value="admin" />
@@ -36,7 +37,7 @@
           <input type="password" class="input" placeholder="请输入密码" value="admin" />
         </div>
         <div class="actions">
-          <button class="btn" type="submit" disabled>登录（演示）</button>
+          <button class="btn" type="submit">登录</button>
           <a class="btn ghost" href="/myblogdemo/register.html">去注册</a>
         </div>
       </form>

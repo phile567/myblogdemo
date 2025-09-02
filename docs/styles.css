@@ -1,4 +1,4 @@
-/* 简化版样式，来自 src/styles/blog.css 的子集，适配静态演示 */
+/* 简化版样式，来自 src/styles/blog.css 的子集 */
 :root {
   --container-width: 820px;
   --text-color: #111;
@@ -46,10 +46,9 @@ body{margin:0;color:var(--text-color);background:#fff;-webkit-font-smoothing:ant
 .btn,.button{background:var(--link-color);color:#fff;border:1px solid var(--link-color);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s ease;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;line-height:1}
 .btn:hover,.button:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
 .btn:active,.button:active{transform:translateY(1px)}
-.btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .btn.ghost{background:transparent;color:var(--link-color);border-color:var(--border-color)}
 .btn-primary{background-color:var(--link-color);border-color:var(--link-color);color:#fff}
-.btn-primary:hover:not(:disabled){background-color:#0284c7;border-color:#0284c7;color:#fff}
+.btn-primary:hover{background-color:#0284c7;border-color:#0284c7;color:#fff}
 .error{color:#b91c1c;font-size:12px}
 .error-message{background:#fee2e2;border:1px solid #fca5a5;border-radius:6px;padding:12px;color:#dc2626;margin:16px 0}
 

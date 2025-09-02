@@ -16,17 +16,18 @@
           <a href="/myblogdemo/archive.html">归档</a>
           <a href="/myblogdemo/about.html">关于</a>
           <a href="/myblogdemo/guestbook.html">留言板</a>
+          <a href="/myblogdemo/my-articles.html">我的文章</a>
+          <a href="/myblogdemo/article-create.html">写文章</a>
         </nav>
       </div>
     </header>
 
     <main class="container">
       <section class="hero">
-        <h1>注册</h1>
-        <p class="muted">创建你的账户（演示页，不提交）</p>
+  <h1>注册</h1>
       </section>
 
-      <form class="form" style="max-width:480px;margin:24px auto" onsubmit="return false;">
+  <form class="form" style="max-width:480px;margin:24px auto" onsubmit="location.href='/myblogdemo/login.html';return false;">
         <div class="field">
           <label>用户名</label>
           <input class="input" placeholder="请输入用户名" />
@@ -52,7 +53,7 @@
           <div class="hint">可不填</div>
         </div>
         <div class="actions">
-          <button class="btn" disabled>注册（演示）</button>
+          <button class="btn" type="submit">注册</button>
           <a class="btn ghost" href="/myblogdemo/login.html">已有账号？去登录</a>
         </div>
       </form>
