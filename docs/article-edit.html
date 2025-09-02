@@ -1,60 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>编辑文章 · MyBlog Demo</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-          <a href="/myblogdemo/login.html">登录</a>
-        </nav>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>编辑文章 - My Blog Demo</title>
+	<link rel="icon" href="vite.svg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">My Blog Demo</a>
+			<nav class="nav">
+				<a href="index.html">首页</a>
+				<a href="my-articles.html">我的文章</a>
+				<a href="article-create.html">写文章</a>
+				<a href="archive.html">归档</a>
+				<a href="about.html">关于</a>
+				<a href="guestbook.html">留言板</a>
+				<a href="login.html">登录</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="container">
-      <section class="hero">
-  <h1>编辑文章</h1>
-      </section>
+	<main class="container auth">
+		<h1>编辑文章</h1>
+		<div class="form">
+			<div class="field">
+				<label for="title">标题</label>
+				<input id="title" class="input" value="在静态网页上模拟博客的发布流程" />
+			</div>
+			<div class="field">
+				<label for="category">分类</label>
+				<input id="category" class="input" value="随笔" />
+			</div>
+			<div class="field">
+				<label for="content">正文</label>
+				<textarea id="content" class="textarea" rows="10">示例正文……</textarea>
+			</div>
+			<div class="actions">
+				<a class="btn btn-primary" href="my-articles.html#updated">保存</a>
+				<a class="btn ghost" href="my-articles.html">取消</a>
+			</div>
+		</div>
+	</main>
 
-  <form class="form" style="max-width:900px" onsubmit="location.href='/myblogdemo/my-articles.html';return false;">
-        <div class="field">
-          <label>文章标题 *</label>
-          <input class="input" value="用假数据搭建一个博客 Demo" />
-        </div>
-        <div class="field">
-          <label>摘要（可选）</label>
-          <textarea class="textarea" rows="3">使用静态页面快速展示博客的布局、导航、文章列表与详情样式。</textarea>
-        </div>
-        <div class="field">
-          <label>文章内容 *</label>
-          <textarea class="textarea" rows="10">这是示例文章内容。</textarea>
-        </div>
-        <div class="field">
-          <label>发布状态</label>
-          <select class="select">
-            <option value="DRAFT">草稿</option>
-            <option value="PUBLISHED">发布</option>
-          </select>
-        </div>
-        <div class="actions">
-          <button class="btn" type="submit">保存修改</button>
-          <a class="btn ghost" href="/myblogdemo/my-articles.html">返回文章列表</a>
-        </div>
-      </form>
-
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
+	<footer class="footer">© 2025 My Blog Demo</footer>
+</body>
 </html>

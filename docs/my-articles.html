@@ -1,59 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我的文章 · MyBlog Demo</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-          <a href="/myblogdemo/login.html">登录</a>
-        </nav>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>我的文章 - My Blog Demo</title>
+	<link rel="icon" href="vite.svg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">My Blog Demo</a>
+			<nav class="nav">
+				<a href="index.html">首页</a>
+				<a href="my-articles.html">我的文章</a>
+				<a href="article-create.html">写文章</a>
+				<a href="archive.html">归档</a>
+				<a href="about.html">关于</a>
+				<a href="guestbook.html">留言板</a>
+				<a href="login.html">登录</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="container">
-      <section class="hero">
-  <h1>我的文章</h1>
-      </section>
+	<main class="container">
+		<section class="hero" style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
+			<div>
+				<h1>我的文章</h1>
+				<p class="muted">共 12 篇</p>
+			</div>
+			<a href="article-create.html" class="btn btn-primary">发布新文章</a>
+		</section>
 
-      <div class="list">
-        <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/post-1.html">用假数据搭建一个博客 Demo</a></h2>
-          <div class="post-meta">2025/08/01 · 状态：已发布</div>
-          <div class="actions">
-            <a class="btn" href="/myblogdemo/article-edit.html">编辑</a>
-            <button class="btn ghost" onclick="location.href='/myblogdemo/my-articles.html'">删除</button>
-          </div>
-        </article>
-        <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/post-2.html">归档与留言功能示意</a></h2>
-          <div class="post-meta">2025/07/25 · 状态：草稿</div>
-          <div class="actions">
-            <a class="btn" href="/myblogdemo/article-edit.html">编辑</a>
-            <button class="btn ghost" onclick="location.href='/myblogdemo/my-articles.html'">删除</button>
-          </div>
-        </article>
-      </div>
+		<section class="list">
+			<article class="post">
+				<h2 class="post-title"><a href="post-1.html">在静态网页上模拟博客的发布流程</a></h2>
+				<div class="post-meta">2025-08-18 · 状态：已发布</div>
+				<p class="post-excerpt">静态站的文章列表，包含查看、编辑与删除等操作链接。</p>
+				<div class="actions">
+					<a class="btn" href="post-1.html">查看</a>
+					<a class="btn ghost" href="article-edit.html">编辑</a>
+					<a class="btn ghost" href="my-articles.html#deleted">删除</a>
+				</div>
+			</article>
 
-      <div class="actions" style="justify-content:center;margin-top:24px">
-        <a class="btn ghost" href="#">« 上一页</a>
-        <span class="muted" style="padding:0 8px">第 1 / 1 页</span>
-        <a class="btn ghost" href="#">下一页 »</a>
-      </div>
+			<article class="post">
+				<h2 class="post-title"><a href="post-2.html">如何在没有后端的情况下做演示</a></h2>
+				<div class="post-meta">2025-08-01 · 状态：草稿</div>
+				<p class="post-excerpt">通过简单跳转模拟草稿发布、编辑与删除交互。</p>
+				<div class="actions">
+					<a class="btn" href="post-2.html">查看</a>
+					<a class="btn ghost" href="article-edit.html">编辑</a>
+					<a class="btn ghost" href="my-articles.html#deleted">删除</a>
+				</div>
+			</article>
+		</section>
 
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
+		<div class="pagination">
+			<a class="pagination-btn" href="#">上一页</a>
+			<div class="pagination-info">第 1 页 / 共 3 页</div>
+			<a class="pagination-btn" href="#">下一页</a>
+		</div>
+	</main>
+
+	<footer class="footer">© 2025 My Blog Demo</footer>
+</body>
 </html>

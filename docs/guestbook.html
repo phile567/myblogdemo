@@ -1,75 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyBlog Demo · 留言板</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-          <a href="/myblogdemo/login.html">登录</a>
-        </nav>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>留言板 - My Blog Demo</title>
+	<link rel="icon" href="vite.svg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">My Blog Demo</a>
+			<nav class="nav">
+				<a href="index.html">首页</a>
+				<a href="my-articles.html">我的文章</a>
+				<a href="article-create.html">写文章</a>
+				<a href="archive.html">归档</a>
+				<a href="about.html">关于</a>
+				<a href="guestbook.html">留言板</a>
+				<a href="login.html">登录</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="container">
-      <section class="hero">
-  <h1>留言板</h1>
-      </section>
+	<main class="container">
+		<section class="hero">
+			<h1>留言板</h1>
+			<p class="muted">欢迎留下你的想法</p>
+		</section>
 
-  <form class="guestbook-form" onsubmit="location.href='/myblogdemo/guestbook.html#submitted';return false;">
-        <div class="form">
-          <div class="field">
-            <label>昵称</label>
-            <input class="input" placeholder="你的名字" />
-          </div>
-          <div class="field">
-            <label>留言内容</label>
-            <textarea class="textarea" rows="4" placeholder="想说点什么…"></textarea>
-          </div>
-          <div class="actions">
-            <button class="btn" type="submit">发表</button>
-          </div>
-        </div>
-      </form>
+		<section class="guestbook-form">
+			<div class="form">
+				<div class="field">
+					<label for="content">内容</label>
+					<textarea id="content" class="textarea" rows="4" placeholder="写点什么..."></textarea>
+				</div>
+				<div class="actions">
+					<a class="btn btn-primary" href="guestbook.html#posted">发表</a>
+					<a class="btn ghost" href="#">清空</a>
+				</div>
+			</div>
+		</section>
 
-      <div class="guestbook-header">
-        <h2>全部留言</h2>
-        <p class="muted">以下为静态示例数据</p>
-      </div>
-      <div class="guestbook-list">
-        <div class="guestbook-entry">
-          <div class="entry-header">
-            <div class="user-info">
-              <div class="user-name">Alice</div>
-              <div class="timestamp">2025/08/02 12:00</div>
-            </div>
-          </div>
-          <div class="entry-content">博客风格很喜欢，期待上线真实版本～</div>
-        </div>
-        <div class="guestbook-entry">
-          <div class="entry-header">
-            <div class="user-info">
-              <div class="user-name">Bob</div>
-              <div class="timestamp">2025/08/01 18:20</div>
-            </div>
-          </div>
-          <div class="entry-content">主题很清爽，阅读体验不错！</div>
-        </div>
-      </div>
+		<div class="guestbook-header">
+			<h2>最近留言</h2>
+		</div>
 
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
+		<div class="guestbook-list">
+			<div class="guestbook-entry">
+				<div class="entry-header">
+					<div class="user-info">
+						<span class="user-name">访客 A</span>
+						<span class="timestamp">2025-08-20 10:12</span>
+					</div>
+				</div>
+				<div class="entry-content">非常喜欢这个简洁的样式！</div>
+				<div class="author-reply">
+					<div class="reply-header">博主回复</div>
+					<div class="reply-content">谢谢支持～</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">© 2025 My Blog Demo</footer>
+</body>
 </html>

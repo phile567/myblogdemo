@@ -1,64 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>注册 · MyBlog Demo</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-        </nav>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>注册 - My Blog Demo</title>
+	<link rel="icon" href="vite.svg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">My Blog Demo</a>
+			<nav class="nav">
+				<a href="index.html">首页</a>
+				<a href="my-articles.html">我的文章</a>
+				<a href="article-create.html">写文章</a>
+				<a href="archive.html">归档</a>
+				<a href="about.html">关于</a>
+				<a href="guestbook.html">留言板</a>
+				<a href="login.html">登录</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="container">
-      <section class="hero">
-  <h1>注册</h1>
-      </section>
+	<main class="container auth">
+		<h1>注册</h1>
+		<div class="form">
+			<div class="field">
+				<label for="username">用户名</label>
+				<input id="username" class="input" placeholder="demo" />
+			</div>
+			<div class="field">
+				<label for="password">密码</label>
+				<input id="password" type="password" class="input" placeholder="••••••" />
+			</div>
+			<div class="field">
+				<label for="password2">确认密码</label>
+				<input id="password2" type="password" class="input" placeholder="••••••" />
+			</div>
+			<div class="actions">
+				<a class="btn btn-primary" href="login.html">注册</a>
+				<a class="btn ghost" href="login.html">已有账号？去登录</a>
+			</div>
+		</div>
+	</main>
 
-  <form class="form" style="max-width:480px;margin:24px auto" onsubmit="location.href='/myblogdemo/login.html';return false;">
-        <div class="field">
-          <label>用户名</label>
-          <input class="input" placeholder="请输入用户名" />
-          <div class="hint">必填</div>
-        </div>
-        <div class="field">
-          <label>密码</label>
-          <input type="password" class="input" placeholder="请输入密码（至少 6 位）" />
-          <div class="hint">至少 6 位</div>
-        </div>
-        <div class="field">
-          <label>确认密码</label>
-          <input type="password" class="input" placeholder="请再次输入密码" />
-        </div>
-        <div class="field">
-          <label>邮箱（可选）</label>
-          <input class="input" placeholder="name@example.com" />
-          <div class="hint">可不填</div>
-        </div>
-        <div class="field">
-          <label>手机号（可选）</label>
-          <input class="input" placeholder="仅数字，10-15 位" />
-          <div class="hint">可不填</div>
-        </div>
-        <div class="actions">
-          <button class="btn" type="submit">注册</button>
-          <a class="btn ghost" href="/myblogdemo/login.html">已有账号？去登录</a>
-        </div>
-      </form>
-
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
+	<footer class="footer">© 2025 My Blog Demo</footer>
+</body>
 </html>

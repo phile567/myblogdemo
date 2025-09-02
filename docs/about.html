@@ -1,45 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyBlog Demo · 关于</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-          <a href="/myblogdemo/login.html">登录</a>
-        </nav>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>关于 - My Blog Demo</title>
+	<link rel="icon" href="vite.svg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">My Blog Demo</a>
+			<nav class="nav">
+				<a href="index.html">首页</a>
+				<a href="my-articles.html">我的文章</a>
+				<a href="article-create.html">写文章</a>
+				<a href="archive.html">归档</a>
+				<a href="about.html">关于</a>
+				<a href="guestbook.html">留言板</a>
+				<a href="login.html">登录</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>关于</h1>
-        <p class="muted">个人博客 · 极简风 · Demo版本（纯静态）</p>
-      </section>
+	<main class="container">
+		<section class="hero">
+			<h1>关于</h1>
+			<p class="muted">一个纯静态的博客演示站点</p>
+		</section>
 
-      <section style="max-width: 680px; line-height: 1.8">
-        <h2>关于这个博客</h2>
-  <p>这是一个简洁的个人博客站点，使用纯静态 HTML/CSS 构建，用于展示样式与结构。</p>
-        <h2>技术栈</h2>
-        <ul>
-          <li>静态页面：HTML + CSS</li>
-          <li>托管：GitHub Pages</li>
-        </ul>
-      </section>
+		<article class="article">
+			<div class="content">
+				<p>这是一个用于 GitHub Pages 的静态博客 Demo。它不包含后端，仅通过页面跳转来模拟常见的博客功能，例如登录、发布文章、编辑与留言等。</p>
+				<p>你可以在导航栏中浏览不同页面，了解整体结构与样式。实际数据与持久化并不存在，仅作为演示。</p>
+			</div>
+		</article>
+	</main>
 
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
+	<footer class="footer">© 2025 My Blog Demo</footer>
+</body>
 </html>

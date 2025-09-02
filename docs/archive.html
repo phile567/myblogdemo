@@ -1,49 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyBlog Demo · 归档</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-          <a href="/myblogdemo/login.html">登录</a>
-        </nav>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>归档 - My Blog Demo</title>
+	<link rel="icon" href="vite.svg" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner">
+			<a href="index.html" class="brand">My Blog Demo</a>
+			<nav class="nav">
+				<a href="index.html">首页</a>
+				<a href="my-articles.html">我的文章</a>
+				<a href="article-create.html">写文章</a>
+				<a href="archive.html">归档</a>
+				<a href="about.html">关于</a>
+				<a href="guestbook.html">留言板</a>
+				<a href="login.html">登录</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>归档</h1>
-        <p class="muted">按时间整理的所有文章（示意数据）</p>
-      </section>
+	<main class="container">
+		<section class="hero">
+			<h1>归档</h1>
+			<p class="muted">按时间浏览历史文章</p>
+		</section>
 
-      <section>
-        <h2>2025 <span class="muted">(2 篇)</span></h2>
-        <ul>
-          <li>
-            <span class="muted" style="display:inline-block;width:120px">2025/08/01</span>
-            <a href="/myblogdemo/post-1.html">用假数据搭建一个博客 Demo</a>
-          </li>
-          <li>
-            <span class="muted" style="display:inline-block;width:120px">2025/07/25</span>
-            <a href="/myblogdemo/post-2.html">归档与留言功能示意</a>
-          </li>
-        </ul>
-      </section>
+		<section class="list">
+			<h3 class="muted">2025</h3>
+			<article class="post">
+				<h2 class="post-title"><a href="post-1.html">在静态网页上模拟博客的发布流程</a></h2>
+				<div class="post-meta">2025-08-18</div>
+			</article>
+			<article class="post">
+				<h2 class="post-title"><a href="post-2.html">如何在没有后端的情况下做演示</a></h2>
+				<div class="post-meta">2025-08-01</div>
+			</article>
+		</section>
+	</main>
 
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
+	<footer class="footer">© 2025 My Blog Demo</footer>
+</body>
 </html>

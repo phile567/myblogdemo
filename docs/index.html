@@ -1,55 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyBlog Demo · 首页</title>
-    <link rel="icon" href="/myblogdemo/vite.svg" />
-    <link rel="stylesheet" href="/myblogdemo/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
-        <nav class="nav">
-          <a href="/myblogdemo/index.html">首页</a>
-          <a href="/myblogdemo/archive.html">归档</a>
-          <a href="/myblogdemo/about.html">关于</a>
-          <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/my-articles.html">我的文章</a>
-          <a href="/myblogdemo/article-create.html">写文章</a>
-          <a href="/myblogdemo/login.html">登录</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog Demo</title>
+  <link rel="icon" href="vite.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Blog demo with static pages for GitHub Pages" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">My Blog Demo</a>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="my-articles.html">我的文章</a>
+        <a href="article-create.html">写文章</a>
+        <a href="archive.html">归档</a>
+        <a href="about.html">关于</a>
+        <a href="guestbook.html">留言板</a>
+        <a href="login.html">登录</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>最新文章</h1>
-  <p class="muted">纯静态页面，展示博客外观与结构</p>
-      </section>
+  <main class="container">
+    <section class="hero">
+      <h1>最新文章</h1>
+      <p class="muted">分享开发、生活与想法</p>
+    </section>
 
-      <div class="list">
-  <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/post-1.html">用假数据搭建一个博客 Demo</a></h2>
-          <div class="post-meta">2025/08/01 · 作者 admin</div>
-          <p class="post-excerpt">使用静态页面快速展示博客的布局、导航、文章列表与详情样式。</p>
-        </article>
+    <section class="list">
+      <article class="post">
+        <h2 class="post-title"><a href="post-1.html">在静态网页上模拟博客的发布流程</a></h2>
+        <div class="post-meta">2025-08-18 · 分类：随笔</div>
+        <p class="post-excerpt">这是一个纯静态的 GitHub Pages 示例站点，用来展示博客的常见页面与交互路径。</p>
+      </article>
+      <article class="post">
+        <h2 class="post-title"><a href="post-2.html">如何在没有后端的情况下做演示</a></h2>
+        <div class="post-meta">2025-08-01 · 分类：前端</div>
+        <p class="post-excerpt">通过超链接与轻量脚本跳转，模拟登录、发文、分页与留言等常见操作。</p>
+      </article>
+    </section>
 
-        <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/post-2.html">归档与留言功能示意</a></h2>
-          <div class="post-meta">2025/07/25 · 作者 admin</div>
-          <p class="post-excerpt">本站提供归档与留言的静态页面，方便预览整体风格。</p>
-        </article>
+    <div class="pagination">
+      <a class="pagination-btn" href="#">上一页</a>
+      <div class="pagination-info">第 1 页 / 共 5 页</div>
+      <a class="pagination-btn" href="#">下一页</a>
+    </div>
+  </main>
 
-        <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/my-articles.html">我的文章</a></h2>
-          <div class="post-meta">作者 admin</div>
-          <p class="post-excerpt">查看个人文章列表，进入编辑或创作页面。</p>
-        </article>
-      </div>
-
-      <footer class="footer">© 2025 MyBlog Demo</footer>
-    </main>
-  </body>
-  </html>
+  <footer class="footer">© 2025 My Blog Demo</footer>
+</body>
+</html>
