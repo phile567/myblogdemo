@@ -32,3 +32,42 @@ body{margin:0;color:var(--text-color);background:#fff;-webkit-font-smoothing:ant
 .article .meta{color:var(--muted-color);margin-bottom:20px}
 .article .content{color:#111827;line-height:1.8;font-size:16px;white-space:pre-wrap}
 .footer{border-top:1px solid var(--border-color);margin-top:48px;padding:24px 0;color:var(--muted-color);text-align:center}
+
+/* === 表单与按钮（与原模板一致的类名） === */
+.auth{max-width:480px;margin:40px auto 0}
+.form{display:grid;gap:16px;margin-top:16px}
+.field{display:grid;gap:6px}
+.field label{font-weight:600;font-size:14px}
+.hint{color:var(--muted-color);font-size:12px}
+.form-group{margin-bottom:1.5rem}
+.input,.select,.textarea,.form-control{width:100%;border:1px solid var(--border-color);border-radius:10px;padding:10px 12px;font-size:14px;outline:none;transition:border-color .15s ease,box-shadow .2s ease;background:#fff;color:var(--text-color);font-family:inherit}
+.input:focus,.select:focus,.textarea:focus,.form-control:focus{border-color:var(--link-color);box-shadow:0 0 0 3px rgba(14,165,233,.1)}
+.actions{display:flex;align-items:center;gap:12px;margin-top:4px}
+.btn,.button{background:var(--link-color);color:#fff;border:1px solid var(--link-color);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s ease;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.btn:hover,.button:hover{opacity:.9;transform:translateY(-1px);text-decoration:none}
+.btn:active,.button:active{transform:translateY(1px)}
+.btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.btn.ghost{background:transparent;color:var(--link-color);border-color:var(--border-color)}
+.btn-primary{background-color:var(--link-color);border-color:var(--link-color);color:#fff}
+.btn-primary:hover:not(:disabled){background-color:#0284c7;border-color:#0284c7;color:#fff}
+.error{color:#b91c1c;font-size:12px}
+.error-message{background:#fee2e2;border:1px solid #fca5a5;border-radius:6px;padding:12px;color:#dc2626;margin:16px 0}
+
+/* === 留言板 === */
+.guestbook-form{background:#f9fafb;border:1px solid var(--border-color);border-radius:12px;padding:24px;margin-bottom:32px}
+.guestbook-header{margin-bottom:20px}
+.guestbook-header h2{margin:0 0 8px;font-size:24px;letter-spacing:-.02em}
+.guestbook-list{display:grid;gap:20px}
+.guestbook-entry{border:1px solid var(--border-color);border-radius:12px;padding:20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:box-shadow .2s ease}
+.guestbook-entry:hover{box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.entry-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
+.user-info{display:flex;flex-direction:column;gap:4px}
+.user-name{color:var(--text-color);font-weight:600;font-size:16px}
+.timestamp{color:var(--muted-color);font-size:13px}
+.entry-content{color:#374151;line-height:1.6;white-space:pre-wrap;margin-bottom:12px}
+.author-reply{margin-top:16px;padding:16px;background:linear-gradient(to right,#f0f9ff,#f8faff);border-left:4px solid var(--link-color);border-radius:8px}
+.reply-header{font-size:14px;color:var(--link-color);margin-bottom:8px;font-weight:600;display:flex;align-items:center;gap:6px}
+.reply-header::before{content:"↳";font-size:16px}
+.reply-content{color:#374151;line-height:1.5;font-size:15px}
+.reply-form{margin-top:16px;padding:16px;background:#f8f9fa;border-radius:8px;border:1px solid #e9ecef}
+.reply-actions{display:flex;gap:12px;margin-top:12px}

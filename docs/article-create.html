@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>发布新文章 · MyBlog Demo</title>
+    <link rel="icon" href="/myblogdemo/vite.svg" />
+    <link rel="stylesheet" href="/myblogdemo/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
+        <nav class="nav">
+          <a href="/myblogdemo/index.html">首页</a>
+          <a href="/myblogdemo/archive.html">归档</a>
+          <a href="/myblogdemo/about.html">关于</a>
+          <a href="/myblogdemo/guestbook.html">留言板</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>发布新文章</h1>
+        <p class="muted">演示页，表单不提交</p>
+      </section>
+
+      <form class="form" style="max-width:900px" onsubmit="return false;">
+        <div class="field">
+          <label>文章标题 *</label>
+          <input class="input" placeholder="请输入文章标题" />
+        </div>
+        <div class="field">
+          <label>摘要（可选）</label>
+          <textarea class="textarea" rows="3" placeholder="请输入文章摘要，留空则自动生成"></textarea>
+          <div class="hint">摘要将显示在文章列表中，最多500字</div>
+        </div>
+        <div class="field">
+          <label>文章内容 *</label>
+          <textarea class="textarea" rows="10" placeholder="在这里编写你的文章内容，支持 Markdown 语法（演示）"></textarea>
+        </div>
+        <div class="field">
+          <label>发布状态</label>
+          <select class="select">
+            <option value="PUBLISHED">立即发布</option>
+            <option value="DRAFT">保存为草稿</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button class="btn" disabled>发布文章（演示）</button>
+          <button class="btn ghost" disabled>保存草稿（演示）</button>
+          <a class="btn ghost" href="/myblogdemo/my-articles.html">取消</a>
+        </div>
+      </form>
+
+      <footer class="footer">© 2025 MyBlog Demo</footer>
+    </main>
+  </body>
+</html>

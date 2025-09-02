@@ -23,7 +23,7 @@
     <main class="container">
       <section class="hero">
         <h1>留言板</h1>
-        <p class="muted">纯静态演示 · 表单不提交</p>
+        <p class="muted">纯静态演示 · 使用现有模版样式</p>
       </section>
 
       <form class="guestbook-form" onsubmit="return false;">
@@ -37,11 +37,15 @@
             <textarea class="textarea" rows="4" placeholder="想说点什么…"></textarea>
           </div>
           <div class="actions">
-            <button class="btn" type="submit">发表（演示）</button>
+            <button class="btn" type="submit" disabled>发表（演示）</button>
           </div>
         </div>
       </form>
 
+      <div class="guestbook-header">
+        <h2>全部留言</h2>
+        <p class="muted">以下为静态示例数据</p>
+      </div>
       <div class="guestbook-list">
         <div class="guestbook-entry">
           <div class="entry-header">
@@ -51,6 +55,15 @@
             </div>
           </div>
           <div class="entry-content">博客风格很喜欢，期待上线真实版本～</div>
+        </div>
+        <div class="guestbook-entry">
+          <div class="entry-header">
+            <div class="user-info">
+              <div class="user-name">Bob</div>
+              <div class="timestamp">2025/08/01 18:20</div>
+            </div>
+          </div>
+          <div class="entry-content">主题很清爽，阅读体验不错！</div>
         </div>
       </div>
 

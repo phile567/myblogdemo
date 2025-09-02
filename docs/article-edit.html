@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>编辑文章 · MyBlog Demo</title>
+    <link rel="icon" href="/myblogdemo/vite.svg" />
+    <link rel="stylesheet" href="/myblogdemo/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/myblogdemo/index.html">MyBlog Demo</a>
+        <nav class="nav">
+          <a href="/myblogdemo/index.html">首页</a>
+          <a href="/myblogdemo/archive.html">归档</a>
+          <a href="/myblogdemo/about.html">关于</a>
+          <a href="/myblogdemo/guestbook.html">留言板</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>编辑文章</h1>
+        <p class="muted">演示页，表单不提交</p>
+      </section>
+
+      <form class="form" style="max-width:900px" onsubmit="return false;">
+        <div class="field">
+          <label>文章标题 *</label>
+          <input class="input" value="用假数据搭建一个博客 Demo" />
+        </div>
+        <div class="field">
+          <label>摘要（可选）</label>
+          <textarea class="textarea" rows="3">使用静态页面快速展示博客的布局、导航、文章列表与详情样式。</textarea>
+        </div>
+        <div class="field">
+          <label>文章内容 *</label>
+          <textarea class="textarea" rows="10">这是示例文章内容（演示页）。</textarea>
+        </div>
+        <div class="field">
+          <label>发布状态</label>
+          <select class="select">
+            <option value="DRAFT">草稿</option>
+            <option value="PUBLISHED">发布</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button class="btn" disabled>保存修改（演示）</button>
+          <a class="btn ghost" href="/myblogdemo/my-articles.html">返回文章列表</a>
+        </div>
+      </form>
+
+      <footer class="footer">© 2025 MyBlog Demo</footer>
+    </main>
+  </body>
+</html>

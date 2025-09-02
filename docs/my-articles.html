@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyBlog Demo · 首页</title>
+    <title>我的文章 · MyBlog Demo</title>
     <link rel="icon" href="/myblogdemo/vite.svg" />
     <link rel="stylesheet" href="/myblogdemo/styles.css" />
   </head>
@@ -16,41 +16,42 @@
           <a href="/myblogdemo/archive.html">归档</a>
           <a href="/myblogdemo/about.html">关于</a>
           <a href="/myblogdemo/guestbook.html">留言板</a>
-          <a href="/myblogdemo/login.html">登录</a>
         </nav>
       </div>
     </header>
 
     <main class="container">
       <section class="hero">
-        <h1>最新文章</h1>
-        <p class="muted">这是一个纯静态演示页面，展示博客外观与结构</p>
+        <h1>我的文章</h1>
+        <p class="muted">仅为样式演示，操作不可用</p>
       </section>
 
       <div class="list">
-  <article class="post">
+        <article class="post">
           <h2 class="post-title"><a href="/myblogdemo/post-1.html">用假数据搭建一个博客 Demo</a></h2>
-          <div class="post-meta">2025/08/01 · 作者 admin</div>
-          <p class="post-excerpt">使用静态页面快速展示博客的布局、导航、文章列表与详情样式。</p>
-        </article>
-
-        <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/post-2.html">归档与留言功能示意</a></h2>
-          <div class="post-meta">2025/07/25 · 作者 admin</div>
-          <p class="post-excerpt">本演示同时提供归档与留言的静态页面，方便预览整体风格。</p>
-        </article>
-
-        <article class="post">
-          <h2 class="post-title"><a href="/myblogdemo/my-articles.html">我的文章（演示）</a></h2>
-          <div class="post-meta">作者 admin</div>
-          <p class="post-excerpt">查看个人文章列表、进入编辑页与创建页的演示入口。</p>
+          <div class="post-meta">2025/08/01 · 状态：已发布</div>
           <div class="actions">
-            <a class="btn" href="/myblogdemo/article-create.html">发布新文章（演示）</a>
+            <a class="btn" href="/myblogdemo/article-edit.html">编辑（演示）</a>
+            <button class="btn ghost" disabled>删除（演示禁用）</button>
           </div>
         </article>
+        <article class="post">
+          <h2 class="post-title"><a href="/myblogdemo/post-2.html">归档与留言功能示意</a></h2>
+          <div class="post-meta">2025/07/25 · 状态：草稿</div>
+          <div class="actions">
+            <a class="btn" href="/myblogdemo/article-edit.html">编辑（演示）</a>
+            <button class="btn ghost" disabled>删除（演示禁用）</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="actions" style="justify-content:center;margin-top:24px">
+        <button class="btn ghost" disabled>« 上一页</button>
+        <span class="muted" style="padding:0 8px">第 1 / 1 页</span>
+        <button class="btn ghost" disabled>下一页 »</button>
       </div>
 
       <footer class="footer">© 2025 MyBlog Demo</footer>
     </main>
   </body>
-  </html>
+</html>
